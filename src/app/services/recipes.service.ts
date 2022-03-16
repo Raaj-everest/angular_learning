@@ -27,6 +27,10 @@ export class RecipeService {
     return this.recipesList.slice();
   }
 
+  getRecipeById(i:number){
+    return this.recipesList[i];
+  }
+
   // selectedRecipe(){
 
   // }
