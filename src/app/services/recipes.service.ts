@@ -1,9 +1,8 @@
-import { EventEmitter } from '@angular/core';
+
 import { Ingredients } from '../models/ingrediants.model';
 import { Recipe } from '../models/Recipe.model';
 
 export class RecipeService {
-  recipeSelected = new EventEmitter<Recipe>();
   recipesList: Recipe[] = [
     new Recipe(
       'testRecipe',
@@ -27,7 +26,7 @@ export class RecipeService {
     return this.recipesList.slice();
   }
 
-  getRecipeById(i:number){
+  getRecipeById(i: number) {
     return this.recipesList[i];
   }
 
